@@ -15,6 +15,8 @@
 		ED06BB7C1EF54D3000A247DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED06BB7A1EF54D3000A247DC /* LaunchScreen.storyboard */; };
 		ED06BB871EF54D3000A247DC /* AyozeProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED06BB861EF54D3000A247DC /* AyozeProjectTests.swift */; };
 		ED06BB921EF54D3000A247DC /* AyozeProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED06BB911EF54D3000A247DC /* AyozeProjectUITests.swift */; };
+		ED06BBA01EF5523E00A247DC /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED06BB9F1EF5523E00A247DC /* File.swift */; };
+		ED5A5AA01EF70FE3005E9F61 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5A5A9F1EF70FE3005E9F61 /* Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		ED06BB8D1EF54D3000A247DC /* AyozeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AyozeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED06BB911EF54D3000A247DC /* AyozeProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AyozeProjectUITests.swift; sourceTree = "<group>"; };
 		ED06BB931EF54D3000A247DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED06BB9F1EF5523E00A247DC /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		ED5A5A9F1EF70FE3005E9F61 /* Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,13 @@
 			children = (
 				ED06BB6E1EF54D3000A247DC /* AppDelegate.swift */,
 				ED06BB701EF54D3000A247DC /* ViewController.swift */,
+				ED06BB9F1EF5523E00A247DC /* File.swift */,
 				ED06BB721EF54D3000A247DC /* Main.storyboard */,
 				ED06BB781EF54D3000A247DC /* Assets.xcassets */,
 				ED06BB7A1EF54D3000A247DC /* LaunchScreen.storyboard */,
 				ED06BB7D1EF54D3000A247DC /* Info.plist */,
 				ED06BB751EF54D3000A247DC /* AyozeProject.xcdatamodeld */,
+				ED5A5A9F1EF70FE3005E9F61 /* Presenter.swift */,
 			);
 			path = AyozeProject;
 			sourceTree = "<group>";
@@ -266,8 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED06BB711EF54D3000A247DC /* ViewController.swift in Sources */,
+				ED06BBA01EF5523E00A247DC /* File.swift in Sources */,
 				ED06BB771EF54D3000A247DC /* AyozeProject.xcdatamodeld in Sources */,
 				ED06BB6F1EF54D3000A247DC /* AppDelegate.swift in Sources */,
+				ED5A5AA01EF70FE3005E9F61 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +528,7 @@
 				ED06BB981EF54D3000A247DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED06BB991EF54D3000A247DC /* Build configuration list for PBXNativeTarget "AyozeProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +537,7 @@
 				ED06BB9B1EF54D3000A247DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED06BB9C1EF54D3000A247DC /* Build configuration list for PBXNativeTarget "AyozeProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +546,7 @@
 				ED06BB9E1EF54D3000A247DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

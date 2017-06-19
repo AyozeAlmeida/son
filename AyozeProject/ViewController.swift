@@ -17,13 +17,17 @@ class ViewController: UIViewController {
         super.viewDidLoad();
         
         
-        let urlString = "http://www.loquatsolutions.com/detres/detres/api/pruebaAyo"
+        let urlString2 = "http://www.loquatsolutions.com/detres/detres/api/pruebaAyo"
+        let urlString = "http://192.168.208.130:3000/getDatos"
         var data = Data()
         do{
             let finalDict  = NSMutableDictionary()
             // finalDict.setValue(infoValue, forKey: "info")
             
-            finalDict.setValue("prueba", forKey: "Token")
+            finalDict.setValue("ABC", forKey: "idPersona")
+            finalDict.setValue("3340CF08-2A4C-47F4-A360-3FA75561F7A2", forKey: "idDispositivo")
+            finalDict.setValue("1", forKey: "estado")
+            
             
             let newdata = try JSONSerialization.data(withJSONObject:finalDict , options: [])
             let newdataString = String(data: newdata, encoding: String.Encoding.utf8)!
@@ -59,7 +63,7 @@ class ViewController: UIViewController {
             }
         }
         
-        print(presenter.ayofun(text: "hola cariño mio"));
+        print(presenter.ayofun(text: "hola "));
         
         // Do any additional setup after loading the view, typically from a nib.
         

@@ -18,11 +18,14 @@ class Presenter {
         let request = NSMutableURLRequest(url: NSURL(string: urlString)! as URL)
         // Set the method to POST
         request.httpMethod = httpMethod
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        let data3 = "idPersona=3501590&idDispositivo=ABC&estado=1".data(using: .utf8)
         // Set the POST/put body for the request
-        request.httpBody = data
+        request.httpBody = data3
+        request.addValue("no-cache", forHTTPHeaderField: "cache-control")
         request.setValue(String.init(format: "%i", (data.count)), forHTTPHeaderField: "Content-Length")
+        print ("printrequest")
+        print(request)
         
         let session = URLSession.shared
         
@@ -64,7 +67,7 @@ class Presenter {
     }
     
     func  ayofun(text: String) -> String {
-        if text == "hola cariño mio" {
+        if text == "hola " {
       
          return "si";
         }
